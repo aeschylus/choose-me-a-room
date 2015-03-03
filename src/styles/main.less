@@ -1,0 +1,81 @@
+@import (less) "lib/normalize.css"; /* Normalize.css - render elements consistently and in line with standards */
+@import "lib/lesshat.less"; /* LESS Hat - collection of LESS mixins */
+@import "lib/ionicons/ionicons.less"; /* Ionicons icon font */
+
+
+/* Replace these example styles with your app's styles */
+body {
+  font-family: Optima;
+  background-color: #f9f9f9;
+  margin:0;
+  box-sizing: border-box;
+  padding: 20px;
+  height:100%;
+  width:100%;
+
+  a {
+    color: #01579b;
+    text-decoration: none;
+    border-bottom: 1px dotted #01579b;
+  }
+
+  .btn {
+    cursor: pointer;
+    padding: 5px;
+    .border-radius(5px);
+    background-color: #333333;
+    color: #eeeeee;
+    .user-select(none);
+    &:hover { background-color: #555555; }
+    &:active { .box-shadow(inset 0px 1px 3px #111111); }
+  }
+
+  .feature {
+    h3 {
+      margin-top: 0;
+    }
+    .big-text {
+      font-size: 24pt;
+    }
+  }
+}
+#background {
+  opacity: 0.1;
+}
+svg {
+  float:left;
+  width: 50%;
+}
+#dashboard {
+  float:left;
+  width:50%;
+}
+#shuffle {
+font-family: helvetica;
+border-radius: 5px;
+font-size: 60%;
+}
+.reveal {
+  float: right;
+  margin-left: 10px;
+}
+ul, li {
+  list-style-type: none;
+}
+li {
+  display: block;
+  width:100%;
+  height: 40px;
+  font-size:120%;
+  font-weight: bold;
+}
+
+button {
+  font-family: helvetica;
+  font-weight:normal;
+}
+
+button:focus{
+  font-family: helvetica;
+  outline: none;
+}
